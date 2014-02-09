@@ -2,12 +2,12 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.filters',
+var myApp = angular.module('myApp', [
+  'ngRoute'
+  /*'myApp.filters',
   'myApp.services',
   'myApp.directives',
-  'myApp.controllers'
+  'myApp.controllers'*/
 ]).
 config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.when('/view1', {templateUrl: 'static/partials/partial1.html', controller: 'MyCtrl1'});

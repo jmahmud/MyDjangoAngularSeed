@@ -1,5 +1,7 @@
 <p>This is the partial for view 2.</p>
 <p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
+  <div ng-repeat="album in albums">
+	<b>Album Name: </b>{{album.name}}<br/>
+	<br/>
+</div>
 </p>
